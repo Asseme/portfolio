@@ -1,0 +1,38 @@
+.contenu{
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #202429;
+}
+
+article{
+  color: white;
+  width: 50%;
+  font-family: 'time new roman';
+  font-size: large;
+  display: inline-block;
+
+}
+article>.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+h1{
+  color: #f6e58c;
+  font-family:'American Typewriter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.content{
+  word-wrap: break-word;
+}
+
+.stack{
+  margin: 20px;
+}

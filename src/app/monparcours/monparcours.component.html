@@ -1,0 +1,99 @@
+<div class="contenu">
+  <h1 title="projets" style="text-align: center ;">[Mon parcours]</h1>
+
+
+  <article >
+    <!-- <span class="material-icons">school</span>
+    <span class="material-icons">
+      desktop_mac
+    </span> -->
+
+    <mat-tab-group mat-align-tabs="start">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon >school</mat-icon>
+          <span class="titre">Parcours scolaire</span>
+        </ng-template>
+
+          <article class="content">
+            <mat-selection-list #parcoursScolaire (click)="onSelected(parcoursScolaire.selectedOptions.selected[0]?.value)" [multiple]="false">
+              <mat-list-option selected value="Formation bac +2 axée sur les fondement de l'informatique et de la gestion d'entreprise
+              (Algorithmique, bases de donnees, Réseau, Comptabilité, etc...) ">
+                <h2>BTS DEVELOPPEUR D'APPLICATION</h2>
+              </mat-list-option>
+              <mat-list-option value="La licence mention informatique à pour but l'apprentissage d'un socle commun de connaissances et
+               de compétences en Informatique. Elle dispense, tout au long des trois ans, des enseignements fondamentaux et appliqués dans les domaines suivants :
+               Algorithmique, Programmation et Génie Logiciel, Sciences des données, Architectures matérielles, Systèmes et Réseaux Informatiques
+               À ces grands socles s'ajoutent des introductions à différents domaines :
+               Informatique Graphique et Interaction Humain Machine
+               Intelligence Artificielle
+               Management de systèmes d'informations et de projets (parcours MIAGE)">
+                <h2>LICENCE INFORMATIQUE - UNIVERSITE PARIS SUD</h2>
+              </mat-list-option>
+              <mat-list-option value="La formation Architecte Web & Big Data de l’IPSSI, vous permet l’obtention d’un titre de
+              « d’Expert en Informatique et Systèmes d’Information » reconnu par l’État enregistré au Répertoire National des
+               Certifications Professionnelles (*). Il se prépare en deux ans après l’obtention d’un diplôme ou d’un titre
+               RNCP de niveau bac+3 dans le domaine informatique. Le diplôme vise à former des professionnels experts dans
+               l’architecture web et du Big Data capables d’assurer la gestion d’un projet web ou d’implémentation d’une structure Big Data">
+                <h2>MASTER ARCHITECTE WEB & BIG DATA</h2>
+              </mat-list-option>
+            </mat-selection-list>
+          </article>
+
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon >desktop_mac</mat-icon>
+          <span class="titre">Parcours Professionel</span>
+        </ng-template>
+
+          <article class="content">
+            <mat-selection-list #profession (click)="onSelected(profession.selectedOptions.selected[0]?.value)" [multiple]="false">
+              <mat-list-option selected value="Projet scolaire en node js et jquery destiné aux inscription à un hackaton">
+                <h2>DÉVELOPPEUR FULLSTACK JAVA/ANGULAR EN ALTERNANCE (2 ANS)</h2>
+              </mat-list-option>
+            </mat-selection-list>
+          </article>
+
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon >crop_free</mat-icon>
+          <span class="titre">Objectifs</span>
+        </ng-template>
+
+          <article class="content">
+            <mat-selection-list #objectifs (click)="onSelected(objectifs.selectedOptions.selected[0]?.value)" [multiple]="false">
+              <mat-list-option selected value="Projet scolaire en node js et jquery destiné aux inscription à un hackaton">
+                <h2>HACKATON</h2>
+              </mat-list-option>
+              <mat-list-option value="Logiciel de demande d'authorisation de voyage en
+              java et angular conçu pendant mon alternance au sein de la compagnie générale de géophysique">
+                <h2>TRAVEL AUTHORIZATION REQUEST</h2>
+              </mat-list-option>
+              <mat-list-option value="Projet scolaire en node js et jquery destiné aux inscription à un hackaton">
+                <h2>AMC</h2>
+              </mat-list-option>
+              <mat-list-option value="Projet scolaire en node js et jquery destiné aux inscription à un hackaton">
+                <h2>Workspace</h2>
+              </mat-list-option>
+              <mat-list-option value="Projet scolaire en node js et jquery destiné aux inscription à un hackaton">
+                <h2>Frequentation des salles de cinéma</h2>
+              </mat-list-option>
+            </mat-selection-list>
+          </article>
+
+      </mat-tab>
+
+    </mat-tab-group>
+
+  </article>
+  <article class="right" >
+    <h1 title="projets" style="text-align: center ;"></h1>
+    <p>
+      {{this.parcoursValue}}
+    </p>
+  </article>
+</div>

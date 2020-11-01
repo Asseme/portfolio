@@ -17,6 +17,8 @@ import { CvComponent } from './cv/cv.component';
 import { ContactComponent } from './contact/contact.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { MonparcoursComponent } from './monparcours/monparcours.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     ProfilComponent,
     ProjetsComponent,
     CvComponent,
-    ContactComponent
+    ContactComponent,
+    MonparcoursComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatIconModule,
     MatListModule,
     MatMenuModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

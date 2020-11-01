@@ -1,7 +1,7 @@
 <div class="contenu">
-  <article >
-    <h1 title="projets" style="text-align: center ;">[Mes projets]</h1>
-    <ul style="list-style-type: none;" class="projets">
+  <h1 title="projets" style="text-align: center ;">[Mes projets]</h1>
+  <article class="left" >
+    <!-- <ul style="list-style-type: none;" class="projets">
       <li style="text-decoration: none;">
         <a href=""><h2>HACKATON</h2></a>
       </li>
@@ -17,8 +17,33 @@
       <li>
         <a href=""><h2>Frequentation des salles de cinéma</h2></a>
       </li>
-    </ul>
+    </ul> -->
+    <mat-selection-list #hacks [multiple]="false">
+      <mat-list-option selected value="Projet scolaire en node js et jquery destiné aux inscription à un hackaton">
+        <h2>HACKATON</h2>
+      </mat-list-option>
+      <mat-list-option value="Logiciel de demande d'authorisation de voyage en
+      java et angular conçu pendant mon alternance au sein de la compagnie générale de géophysique">
+        <h2>TRAVEL AUTHORIZATION REQUEST</h2>
+      </mat-list-option>
+      <mat-list-option value="Projet scolaire en node js et jquery destiné aux inscription à un hackaton">
+        <h2>AMC</h2>
+      </mat-list-option>
+      <mat-list-option value="Projet scolaire en node js et jquery destiné aux inscription à un hackaton">
+        <h2>Workspace</h2>
+      </mat-list-option>
+      <mat-list-option value="Projet scolaire en node js et jquery destiné aux inscription à un hackaton">
+        <h2>Frequentation des salles de cinéma</h2>
+      </mat-list-option>
+    </mat-selection-list>
+  </article>
 
+  <article class="right">
+    <h1 title="projets" style="text-align: center ;"></h1>
+    <p>
+      {{hacks.selectedOptions.selected[0]?.value}}
+    </p>
   </article>
 
 </div>
+
